@@ -82,3 +82,6 @@ Then open the local Flask address shown in the terminal.
 
 ## 👩‍💻 Project Type
 Machine Learning Regression + Flask Web Application
+## 🌐 Live Demo
+
+🚀 [Click here to open Expenditure Predictor](https://expenditure-predictor-ml.onrender.com)
