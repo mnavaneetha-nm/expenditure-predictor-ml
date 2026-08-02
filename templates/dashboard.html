@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expenditure Dashboard</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff0f5;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .dashboard {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            width: 220px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #555;
+        }
+
+        .card h2 {
+            color: #4a7bd0;
+        }
+
+        .back-button {
+            display: block;
+            width: 180px;
+            margin: 40px auto;
+            padding: 12px;
+            text-align: center;
+            background: #4a7bd0;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+    </style>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <h1>📊 Expenditure Dashboard</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>💰 Total Expenditure</h3>
+            <h2>₹{{ total_expenditure }}</h2>
+        </div>
+
+        <div class="card">
+            <h3>📈 Average Transaction</h3>
+            <h2>₹{{ average_expenditure }}</h2>
+        </div>
+
+        <div class="card">
+            <h3>🏆 Highest Spending Category</h3>
+            <h2>{{ highest_category }}</h2>
+        </div>
+
+    </div>
+
+    <a href="/" class="back-button">
+        ← Back to Predictor
+    </a>
+
+</div>
+
+</body>
+</html>
